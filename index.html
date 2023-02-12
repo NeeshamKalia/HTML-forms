@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML forms</title>
+</head>
+<body>
+    <h1>HTML form submission</h1>
+    <form action="https://www.google.com/" method="POST" >
+        <fieldset>
+            <legend>Add User</legend>
+
+            <div>
+                <label for = "firstName">First Name:</label>
+                <input type="text" name="first-Name" id = "firstName" placeholder="enter first name">
+            </div>
+
+            <div>
+                <label for = "lastName">Last Name:</label>
+                <input type="text" name="last-Name" id = "lastName" placeholder="enter last name">
+            </div>
+
+            <div>
+                <label for = "email">Email:</label>
+                <input type="email" name="email-address" id = "email" placeholder="enter email">
+            </div>
+
+            <div>
+                <label for = "Status">Status</label>
+                <select id = "Status" name="status">
+                    <option name = "Student">Student</option>
+                    <option name = "Teacher">Teacher</option>
+                    <option name = "Guest">Guest</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Choose your favorite programming language:</p>
+                <input type="radio" name="html" id="HTML">
+                <label for="HTML">HTML</label>
+                <input type="radio" name="css" id = "CSS">
+                <label for = "CSS">CSS</label>
+                <input type="radio" name = "javascript" id = "Javascript">
+                <label for = "javascript">Javascript</label>
+                <!-- we can use <br> tag to put the options in separate lines -->
+            </div>
+
+
+            <div>
+                <label for="comments">Comments:</label>
+                <textarea id = "comments" name="Comments">
+
+                </textarea>
+
+            </div>
+
+            <div>
+                <label for = "date">Current date</label>
+                <input type="date" name="current-date" id = "div">
+            </div>
+
+            <div>
+               <input type="checkbox" name="newsletter" id = "newsletter" value="Newsletter">
+               <label for="newsletter">Sign up for the newsletter</label>
+                <br>
+               <input type="checkbox" name="t&c" id="tnc" value="T&C">
+               <label for ="tnc">Agree to <a href="www.google.com">Terms and Conditions</a></label>
+
+            </div>
+
+            <div>
+                <button type="submit" value="user-data">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
