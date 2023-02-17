@@ -14,35 +14,35 @@
 
             <div>
                 <label for = "firstName">First Name:</label>
-                <input type="text" name="first-Name" id = "firstName" placeholder="enter first name">
+                <input type="text" name="first-Name" id = "firstName" placeholder="enter first name" required>
             </div>
 
             <div>
                 <label for = "lastName">Last Name:</label>
-                <input type="text" name="last-Name" id = "lastName" placeholder="enter last name">
+                <input type="text" name="last-Name" id = "lastName" placeholder="enter last name" required>
             </div>
 
             <div>
                 <label for = "email">Email:</label>
-                <input type="email" name="email-address" id = "email" placeholder="enter email">
+                <input type="email" name="email-address" id = "email" placeholder="enter email" required>
             </div>
 
             <div>
                 <label for = "Status">Status</label>
                 <select id = "Status" name="status">
-                    <option name = "Student">Student</option>
-                    <option name = "Teacher">Teacher</option>
-                    <option name = "Guest">Guest</option>
+                    <option>Student</option>
+                    <option>Teacher</option>
+                    <option>Guest</option>
                 </select>
             </div>
 
             <div>
                 <p>Choose your favorite programming language:</p>
-                <input type="radio" name="html" id="HTML">
+                <input type="radio" name="programming-language" id="HTML">
                 <label for="HTML">HTML</label>
-                <input type="radio" name="css" id = "CSS">
+                <input type="radio" name="programming-language" id = "CSS">
                 <label for = "CSS">CSS</label>
-                <input type="radio" name = "javascript" id = "Javascript">
+                <input type="radio" name = "programming-language" id = "Javascript">
                 <label for = "javascript">Javascript</label>
                 <!-- we can use <br> tag to put the options in separate lines -->
             </div>
@@ -50,21 +50,20 @@
 
             <div>
                 <label for="comments">Comments:</label>
-                <textarea id = "comments" name="Comments">
-
-                </textarea>
-
+                <textarea id = "comments" name="Comments"></textarea>
             </div>
 
             <div>
-                <label for = "date">Current date</label>
-                <input type="date" name="current-date" id = "div">
+                <label for = "current-date">Current date</label>
+                <input type="date" name="current-date" id = "current-date">
             </div>
 
             <div>
                <input type="checkbox" name="newsletter" id = "newsletter" value="Newsletter">
                <label for="newsletter">Sign up for the newsletter</label>
-                <br>
+            </div>
+
+            <div>
                <input type="checkbox" name="t&c" id="tnc" value="T&C">
                <label for ="tnc">Agree to <a href="www.google.com">Terms and Conditions</a></label>
 
